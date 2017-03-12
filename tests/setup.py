@@ -9,7 +9,7 @@ setup(name="Assignment3",
       licence="GPL3",
       packages=['Assignment3'],
       entry_points={
-          'console_scripts':['_Assignment3=Assignment3.main_lights:main']
+          'console_scripts':['comp30670_Assignment3=Assignment3.main_lights:main']
           },
       install_requires=[
           'numpy',
