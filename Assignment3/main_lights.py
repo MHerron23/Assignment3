@@ -37,8 +37,17 @@ def main():
         
     text_file.close()
     
-    print("Hello There")
-    #test
+    print("Calculating...")   
+    filename = open("lights.txt", "r")
+    x = filename.read()
+    
+    with open("lights.txt", "r") as f:
+        
+        for line in f.readlines()[1:]:     
+            line = line.replace(',', ' ') 
+            
+            values = re.sub("[^\w]", " ",  line).split() 
+
 
 
 if __name__ == '__main__':
