@@ -1,6 +1,6 @@
 from setuptools import setup
 
-setup(name="LEDtester",
+setup(name="Assignment3",
       version="0.2",
       description="LED Testing for COMP30670 Assignment 3",
       url="",
@@ -9,7 +9,7 @@ setup(name="LEDtester",
       licence="GPL3",
       packages=['Assignment3'],
       entry_points={
-          'console_scripts':['Assignment3_led_tester=Assignment3.main_lights:main']
+          'console_scripts':['_Assignment3=Assignment3.main_lights:main']
           },
       install_requires=[
           'numpy',
