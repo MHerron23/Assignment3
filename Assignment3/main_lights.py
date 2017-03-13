@@ -5,7 +5,7 @@ import urllib.request
 import re
 
 
-# Function to validate values are within the given range of grid size.
+# Function to validate that the values are within the given range of the grid.
 # If not present then manipulate the vales according to grid size and then pass on to calculate.
 def validate_values(x1,y1,x2,y2,L):
 
@@ -15,7 +15,7 @@ def validate_values(x1,y1,x2,y2,L):
     #Check for grid values
     if x2 >= x1 and y2 >= y1:
     
-    #If values are negative then make them zero and make sure that values are not out of bound.
+    #If values are negative then make them zero and make sure that values are not out of bounds.
     
         if x1 < 0:
             x1 = 0 
@@ -39,7 +39,7 @@ def validate_values(x1,y1,x2,y2,L):
         elif y2 >= L:
             y2 = L-1        
     else:
-        print("Invalid data for grid.")
+        print("Invalid data for grid")
     return x1,y1,x2,y2,L
     
     
@@ -97,7 +97,7 @@ def count_lights_ON(ledGrid):
 # Main function which will call above all functions and will take input filename from command prompt.
 def main():
 
-    filename = input("Please enter the file name: ")#"http://claritytrec.ucd.ie/~alawlor/comp30670/input_assign3.txt"
+    filename = input("Please enter the file name: ")#enter the file URL here
     print("Given file name:", filename)
     
     if filename.startswith('http'):
